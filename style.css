@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aqua;
+    
+}
+header{
+    background-color: black;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+nav li {
+    list-style: none;
+    display: inline;
+    padding-top: 17px;
+    padding-bottom: 16px;
+}
+nav li:hover{
+    background-color: grey;
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+.logo {
+    width: 187.5px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+/* content */
+.container{
+    display: grid;
+}
+.mainpage{
+    width: 98.75vw;
+    height: 91vh;
+    background-color: hotpink;
+    /* background: url(image/mainpageillustration.jpg); */
+    background-position: center;
+    background-size: contain;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.mainpage h1, .mainpage span{
+    color: white;
+    
+}
+.mainpage h1{
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+}
+.mainpage span {
+    font-size: 25px;
+}
+.linkbtn{
+    width: 120px;
+    height: 50px;
+    background-color: indianred;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.linkbtn:hover{
+    background-color: maroon;
+}
+.mainpage a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.aboutpage {
+    width: 98.75vw;
+    height: 50vh;
+    background-color: mediumpurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.aboutpage h1{
+    color: white;
+    font-family: 'Acme', sans-serif;
+    margin-left: 20px;
+}
+.aboutpage p{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 50vw;
+    text-align: justify;
+}
+.productpage {
+    width: 98.75vw;
+    height: 60vh;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+.productpage h1 {
+    color: white;
+    font-family: 'Acme', sans-serif;
+    margin-right: 20px;
+}
+.productpage p{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 50vw;
+    text-align: right;
+}
+.result {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    margin-right: 350px;
+}
+.result img {
+    width: 321px;
+    height: 212px;
+    margin: 10px 10px;
+}
+.contactpage {
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 98.75vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contactpage h1{
+    font-family: 'Acme', sans-serif;
+}
+.contactpage p {
+    font-family: 'Kanit', sans-serif;
+    margin-top: 15px;
+}
+.contactlog {
+    margin-top: 15px;
+}
+.contactlog a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+    transition: .2s;
+}
+.contactlog a:hover {
+    font-size: 45px;
+}
+footer{
+    width: 98.75vw;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Form */
+.formcontent{
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logoform{
+    width: 500px;
+    height: 134px;
+}
+.formulir{
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+}
+.inputfield{
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px black;
+    border-bottom: white 1px solid;
+    background: transparent;
+    outline: none;
+}
+.eventradio{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.eventradio select{
+    margin-left: 5px;
+    padding: 5px;
+    width: 130px;
+    border: none;
+    border-bottom: 1px white solid;
+    background: transparent;
+    outline: none;
+}
+.envradio{
+    margin-top: 10px;
+}
+.orderbtn{
+    margin-top: 30px;
+    padding: 5px;
+    background-color: turquoise;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.orderbtn:hover{
+    background-color: rgb(0, 84, 90);
+    cursor: pointer;
+    color: white;
+}
+.mainbody{
+    background-color: teal;
+}
+
+.welcomepage{
+    background-color: tomato;
+}
+.welcomecontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.welcomeform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+}
+.welcomeform h1{
+    font-family: 'Acme', sans-serif;
+}
+.welcomeform p {
+    font-family: 'Kanit', sans-serif;
+    margin-top: 10px;
+}
+.welcomlink {
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+.welcomlog{
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+    transition: .2s;
+}
+.sociallink{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}

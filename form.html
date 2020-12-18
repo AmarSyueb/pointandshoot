@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order | Point and Shoot</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    </head>
+    <body class="mainbody">
+        <div id="formcontent" class="formcontent">
+            <a href="index.html"><img class="logoform" src="image/logo.png" alt=""></a>
+            <form class="formulir" action="welcome.html">
+                <input class="inputfield" type="text" id="name" placeholder="Input Your Name" required>
+                <input class="inputfield" type="email" id="email" placeholder="Input Your Email" required>
+                <input class="inputfield" type="text" id="phone" placeholder="Input Your Phone Number" required>
+                <div class="eventradio"><label for="event">Event</label>
+                <select name="event" id="event">
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="graduation">Graduation</option>
+                </select></div>
+                <div class="envradio">
+                <label for="place">Environment</label>
+                <input type="radio" for="outdoor-env" name="env">
+                <label for="outdoor-env">Outdoor</label>
+                <input type="radio" for="indoor-env" name="env">
+                <label for="indoor-env">Indoor</label></div>
+                <input class="orderbtn" type="submit" value="Order">
+            </form>
+        </div>
+    </body>
+</html>
